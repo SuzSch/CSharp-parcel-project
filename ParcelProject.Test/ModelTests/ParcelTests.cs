@@ -28,6 +28,15 @@ namespace ParcelProject.Test
         }
 
         [TestMethod]
+        public void Volume_CalculateVolume_Int()
+        {
+            Parcel myParcel = new Parcel(2, 3, 4, 10);
+            int expectedVolume = 24;
+            int actualVolume = myParcel.GetVolume();
+            Assert.AreEqual(expectedVolume, actualVolume);
+        }
+
+        [TestMethod]
         public void ParcelContact_MakeContactForParcel_Contact()
         {
             Parcel myParcel = new Parcel(34, 20, 10, 50);
