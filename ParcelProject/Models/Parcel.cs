@@ -35,6 +35,11 @@ namespace ParcelProject.Models
             return Length * Height * Width;
         }
 
+        public int CostToShip()
+        {
+            return GetVolume() * 2;
+        }
+
         public Contact ParcelContact { get; set; } = new Contact("Sarah Smith", "sarah@gmail.com", "123-456-5678");
 
     }

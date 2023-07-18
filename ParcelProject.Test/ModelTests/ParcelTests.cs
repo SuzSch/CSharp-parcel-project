@@ -37,6 +37,15 @@ namespace ParcelProject.Test
         }
 
         [TestMethod]
+        public void CostToShip_CalculateCost_Int()
+        {
+            Parcel myParcel = new Parcel(2, 3, 4, 10);
+            int expectedCostSmVolume = 48;
+            int actualCostSmVolume = myParcel.CostToShip();
+            Assert.AreEqual(expectedCostSmVolume, actualCostSmVolume);
+        }
+
+        [TestMethod]
         public void ParcelContact_MakeContactForParcel_Contact()
         {
             Parcel myParcel = new Parcel(34, 20, 10, 50);
