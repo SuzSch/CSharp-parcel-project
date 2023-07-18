@@ -5,11 +5,27 @@ namespace ParcelProject.Models
 {
     public class Parcel
     {
-        public Parcel(int width)
+        public Parcel(int width, int length, int height, int weight)
         {
             Width = width;
+            Length = length;
+            Height = height;
+            Weight = weight;
         }
         public int Width
+        {
+            get; set;
+        }
+        public int Length
+        {
+            get; set;
+        }
+        public int Height
+        {
+            get; set;
+        }
+
+        public int Weight
         {
             get; set;
         }
